@@ -1,13 +1,8 @@
-import React from 'react';
-import Button from '@mui/material/Button';
+import AppLayout from './components/AppLayout';
 
 function App() {
   return (
-    <div>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
-    </div>
+    <AppLayout />
   );
 }
 
