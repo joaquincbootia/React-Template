@@ -1,8 +1,12 @@
+import { ThemeProvider } from '@mui/material/styles';
 import AppLayout from './components/AppLayout';
+import theme from './theme/theme';
 
 function App() {
   return (
-    <AppLayout />
+    <ThemeProvider theme={theme}>
+      <AppLayout />
+    </ThemeProvider>
   );
 }
 
