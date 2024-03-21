@@ -10,9 +10,24 @@ const theme = createTheme({
         },
     },
     typography: {
-        fontFamily: "Helvetica, Arial, sans-serif", // Change this to your desired font family
+        fontFamily: "Helvetica, Arial, sans-serif",
     },
-    // Add more customizations as needed
+    components: {
+        MuiListItemButton: {
+            styleOverrides: {
+                root: {
+                    marginRight: 2,
+                },
+            },
+        },
+        MuiToolbar: {
+            styleOverrides: {
+                root: {
+                    justifyContent: "center",
+                },
+            },
+        },
+    },
 });
 
 export default theme;

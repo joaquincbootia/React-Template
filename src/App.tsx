@@ -1,12 +1,12 @@
 import { ThemeProvider } from '@mui/material/styles';
-import AppLayout from './components/AppLayout';
 import theme from './themes/theme';
+import AppRouter from './router';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <AppLayout />
-    </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <AppRouter />
+      </ThemeProvider>
   );
 }
 
