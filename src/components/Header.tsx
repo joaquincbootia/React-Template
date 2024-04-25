@@ -3,7 +3,7 @@ import ResponsiveAppBar from './Menu';
 
 const Header: React.FC = () => {
   return (
-    <div>
+    <div className="sticky top-0 z-10">
       <ResponsiveAppBar />
     </div>
   );

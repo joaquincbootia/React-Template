@@ -8,15 +8,18 @@ import About from './pages/About';
 const AppRouter: React.FC = () => {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        {/* Add more routes for other pages */}
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* Add more routes for other pages */}
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   );
 };
 
 export default AppRouter;
+    
